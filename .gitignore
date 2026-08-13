@@ -14,6 +14,7 @@ output/
 *.jpeg
 *.xlsx
 *.sas7bdat
+import_data.sas
 data_dictionary.csv
 extracted.json
 qc_report.md
@@ -22,5 +23,8 @@ qc_report.md
 .env
 *.key
 
-# 例外：仓库自带的演示图（非患者数据）
+# 例外：仓库自带的演示图 + 示例（均为虚构数据，非患者数据）
 !docs/demo.png
+!docs/example/extracted.json
+!docs/example/data_dictionary.csv
+!docs/example/qc_report.md

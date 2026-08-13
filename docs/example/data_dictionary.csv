@@ -1,0 +1,7 @@
+﻿Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+age,baseline,,text,年龄（岁）,,,integer,18,120,,,y,,,,,
+gender,baseline,,radio,性别,"1, 男 | 2, 女",,,,,,,y,,,,,
+smoking,baseline,,radio,是否吸烟,"0, 否 | 1, 是",,,,,,,y,,,,,
+sbp,baseline,,text,收缩压（mmHg）,,,integer,60,250,,,y,,,,,
+mh_history,baseline,,notes,既往病史,,,,,,,,,,,,,
+visit_date,baseline,,text,随访日期,,,date,,,,,y,,,,,

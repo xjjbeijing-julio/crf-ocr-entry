@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/demo.png" alt="扫描 CRF → 结构化数据 + REDCap 数据字典" width="92%"/>
+  <img src="docs/demo.gif" alt="扫描 CRF → 结构化数据 + REDCap 数据字典" width="92%"/>
 </p>
 
 ---
@@ -107,6 +107,10 @@ python scripts/quality_check.py \
 crf-ocr-entry/
 ├── SKILL.md                              # Claude Skill 定义（name/description/流程）
 ├── README.md                             # 本文件
+├── LICENSE                               # MIT
+├── docs/
+│   ├── demo.png / demo.gif               # before/after 演示图（静态 + 动画）
+│   └── example/                          # 可复现运行示例（虚构数据）
 ├── references/
 │   ├── paddleocr_setup.md                # PaddleOCR 安装 / 版本 pin / 排坑
 │   └── redcap_dictionary_schema.md        # REDCap 数据字典列规范与示例
@@ -116,6 +120,24 @@ crf-ocr-entry/
     ├── build_redcap.py                   # Step 3&4：数据字典 + 数据表
     └── quality_check.py                  # Step 5：数据质控
 ```
+
+## 📖 运行示例
+
+仓库自带一个**可复现的虚构数据示例** [`docs/example/`](docs/example/)——无需 OCR/LLM 即可看到 Step 3→5 的真实输入输出：
+
+- `schema.json` + `extracted.json`：字段契约 + 模拟手写抽取结果（**故意埋了 8 处错误**）；
+- `data_dictionary.csv`：REDCap 标准数据字典；
+- `data.csv`：宽表；
+- `qc_report.md`：质控报告，把缺失 / 越界 / 非法取值 / 重复 / 日期格式错逐条抓出。
+
+```bash
+python scripts/build_redcap.py --schema docs/example/schema.json \
+  --extracted docs/example/extracted.json --out docs/example --form-name baseline
+python scripts/quality_check.py --data docs/example/data.csv \
+  --dictionary docs/example/data_dictionary.csv --out docs/example/qc_report.md
+```
+
+详见 [`docs/example/README.md`](docs/example/README.md)。
 
 ## 🛡️ 隐私与合规
 

@@ -1,0 +1,47 @@
+[
+  {
+    "record_id": "R001",
+    "age": "47",
+    "gender": "1",
+    "smoking": "1",
+    "sbp": "138",
+    "mh_history": "高血压、糖尿病",
+    "visit_date": "2026-08-10"
+  },
+  {
+    "record_id": "R002",
+    "age": "150",
+    "gender": "2",
+    "smoking": "1",
+    "sbp": "122",
+    "mh_history": null,
+    "visit_date": "2026-08-11"
+  },
+  {
+    "record_id": "R003",
+    "age": "abc",
+    "gender": "1",
+    "smoking": "2",
+    "sbp": "90",
+    "mh_history": "无",
+    "visit_date": "2026/08/12"
+  },
+  {
+    "record_id": "R003",
+    "age": "55",
+    "gender": "1",
+    "smoking": "1",
+    "sbp": "300",
+    "mh_history": "哮喘",
+    "visit_date": "2026-08-12"
+  },
+  {
+    "record_id": "R005",
+    "age": null,
+    "gender": "2",
+    "smoking": "1",
+    "sbp": "118",
+    "mh_history": "冠心病",
+    "visit_date": "2026-08-13"
+  }
+]

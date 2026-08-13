@@ -1,0 +1,50 @@
+{
+  "form_name": "baseline",
+  "fields": [
+    {
+      "variable": "age",
+      "field_label": "年龄（岁）",
+      "field_type": "text",
+      "text_validation": "integer",
+      "min": "18",
+      "max": "120",
+      "required": "y"
+    },
+    {
+      "variable": "gender",
+      "field_label": "性别",
+      "field_type": "radio",
+      "choices": "1, 男 | 2, 女",
+      "required": "y"
+    },
+    {
+      "variable": "smoking",
+      "field_label": "是否吸烟",
+      "field_type": "radio",
+      "choices": "0, 否 | 1, 是",
+      "required": "y"
+    },
+    {
+      "variable": "sbp",
+      "field_label": "收缩压（mmHg）",
+      "field_type": "text",
+      "text_validation": "integer",
+      "min": "60",
+      "max": "250",
+      "required": "y"
+    },
+    {
+      "variable": "mh_history",
+      "field_label": "既往病史",
+      "field_type": "notes",
+      "required": ""
+    },
+    {
+      "variable": "visit_date",
+      "field_label": "随访日期",
+      "field_type": "text",
+      "text_validation": "date",
+      "required": "y"
+    }
+  ]
+}
