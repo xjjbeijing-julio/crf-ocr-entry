@@ -21,3 +21,6 @@ qc_report.md
 # 密钥
 .env
 *.key
+
+# 例外：仓库自带的演示图（非患者数据）
+!docs/demo.png

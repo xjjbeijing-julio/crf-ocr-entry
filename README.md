@@ -12,6 +12,10 @@
   <img src="https://img.shields.io/badge/QC-Python%20Report-F59E0B" alt="Quality Control"/>
 </p>
 
+<p align="center">
+  <img src="docs/demo.png" alt="扫描 CRF → 结构化数据 + REDCap 数据字典" width="92%"/>
+</p>
+
 ---
 
 ## 🎯 它解决什么痛点
