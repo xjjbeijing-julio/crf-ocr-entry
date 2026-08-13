@@ -10,6 +10,8 @@
   <img src="https://img.shields.io/badge/Handwriting-Multimodal%20LLM-EC4899" alt="Multimodal LLM"/>
   <img src="https://img.shields.io/badge/Output-REDCap%20%2F%20CSV%20%2F%20Excel%20%2F%20SAS-10B981" alt="Outputs"/>
   <img src="https://img.shields.io/badge/QC-Python%20Report-F59E0B" alt="Quality Control"/>
+  <img src="https://img.shields.io/github/license/xjjbeijing-julio/crf-ocr-entry" alt="License: MIT"/>
+  <img src="https://img.shields.io/github/stars/xjjbeijing-julio/crf-ocr-entry?style=social" alt="GitHub stars"/>
 </p>
 
 <p align="center">
@@ -138,6 +140,25 @@ python scripts/quality_check.py --data docs/example/data.csv \
 ```
 
 详见 [`docs/example/README.md`](docs/example/README.md)。
+
+## ⚡ 用法速查卡 · Quick Reference
+
+| # | 步骤 Step | 脚本 Script | 关键参数 Key args |
+|---|-----------|-------------|-------------------|
+| 1 | 版面定位 · Layout | `ocr_layout.py` | `--input` PDF/图片 · `--out` · `--lang ch` |
+| 2 | 手写识别 · Handwriting | `extract_handwriting.py` | `--layout` · `--crops` · `--schema` · `--base-url/--model/--api-key` |
+| 3 | 数据字典 · Dictionary | `build_redcap.py` | `--schema` · `--extracted` · `--out` · `--form-name` |
+| 4 | 数据表 · Table | `build_redcap.py` | 同 Step 3，额外导出 `data.xlsx` / `data.sas7bdat` |
+| 5 | 质控 · QC | `quality_check.py` | `--data` · `--dictionary` · `--out` |
+
+**关键术语 · Glossary**
+
+| 中文 | English | 中文 | English |
+|---|---|---|---|
+| 病例报告表 | Case Report Form (CRF) | 取值域 | Valid values / choices |
+| 数据字典 | Data Dictionary | 缺失率 | Missing rate |
+| 手写识别 | Handwriting recognition | 越界 | Out of range |
+| 质控 | Quality control (QC) | 一致性 | Cross-field consistency |
 
 ## 🛡️ 隐私与合规
 
