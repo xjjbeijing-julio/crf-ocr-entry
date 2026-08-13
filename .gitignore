@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 运行时产物（OCR/抽取中间结果、数据、质控报告——涉及患者数据，勿提交）
+work/
+output/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.xlsx
+*.sas7bdat
+data_dictionary.csv
+extracted.json
+qc_report.md
+
+# 密钥
+.env
+*.key
